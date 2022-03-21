@@ -1,0 +1,266 @@
+/*kolor #FFB54D*/
+ul{
+    margin-bottom: 0;
+}
+body{
+    /*background-color: #3c3c3c;*/
+    /*background-color: #212121;*/
+    background-color: #2a2a2a;
+}
+a, p, h1, h3, h5{
+    /*color: #ff9600;*/
+    color: #da8000;
+}
+.full_logo{
+    /*border: 1px solid yellow;*/
+    padding: 20px 0;
+    max-width: 400px;
+    margin: 0 auto;
+}
+.full_logo img{
+    display: block;
+    max-width: 100px;
+    margin: auto;
+}
+.full_logo h3{
+    margin-top: -10px;
+    font-size: 50px;
+    font-family: 'Kaushan Script', cursive;
+    text-align: center;
+    /*color: #ff9600;*/
+}
+.full_logo h5{
+    /*color: #ff9600;*/
+    font-family: 'Kaushan Script', cursive;
+    text-align: center;
+
+}
+.header{
+    background-color: #212121;
+}
+.container{
+    /*border: 1px solid green;*/
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+.header_inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 90px;
+}
+.logo{
+    display: block;
+}
+.logo img{
+    width: 100px;
+}
+.logo a:hover img{
+    width: 105px;
+}
+nav{
+    width: 80%;
+}
+.menu_list{
+    display: flex;
+    justify-content: space-between;
+}
+.menu_list ul{
+    display: flex;
+    margin-bottom: 0;
+}
+.menu_list li{
+    /*margin-left: 100px;*/
+}
+.menu_list a{
+    display: inline-block;
+    font-size: 30px;
+    font-family: 'Kaushan Script', cursive;
+    text-decoration: none;
+    transition: all 0.5s;
+}
+.menu_list a:hover{
+    font-weight: bold;
+    color: #ff9600;
+}
+
+#footer{
+    background-color: #212121;
+}
+#footer_inner{
+    margin: 0 20px;
+    align-items: center;
+    height: 510px;
+}
+#footer_inner h3{
+    margin-top: 20px;
+    /*color: #ff9600;*/
+    text-align: center;
+    font-size: 30px;
+    font-style: italic;
+}
+#footer_menu{
+    width: 150px;
+    margin: 20px auto 10px auto;
+}
+#footer_m{
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+}
+#footer_menu p{
+    text-align: center;
+    margin-bottom: 10px;
+}
+#footer_menu img{
+    width: 30px;
+}
+#footer .full_logo{
+    border-bottom: 1px solid #da8000;
+}
+#footer .full_logo img{
+    max-width: 100px;
+}
+#footer .full_logo h3{
+    margin-top: -10px;
+    font-size: 50px;
+}
+#bot_info{
+    /*border: 1px solid red;*/
+    display: flex;
+    justify-content: space-between;
+    margin: 10px auto;
+}
+
+#bot_info p{
+    font-size: 18px;
+    text-align: center;
+}
+#bot_info a{
+    /*color: #ff9600;*/
+    color: #da8000;
+    text-decoration: none;
+}
+#bot_info img{
+    margin-right: 10px;
+}
+#stopka{
+    border-top: 1px solid #da8000;
+    margin-top: 0;
+    padding-top: 10px;
+    text-align: right;
+}
+.main{
+    margin: 0 auto;
+    position: relative;
+}
+#slider_inner{
+    position: absolute;
+    top: 10%;
+    left: 2%;
+    max-width: 500px;
+    /*color: #ff9600;*/
+    color: #da8000;
+}
+#slider_inner h3{
+    text-align: center;
+    font-size: 4vw;
+}
+#slider_inner h5{
+    text-align: center;
+    font-size: 1.5vw;
+}
+.text__info{
+    font-family: 'Carter One', cursive;
+    margin-top: 140px;
+    text-align: center;
+    /*color: #ff9600;*/
+    color: #da8000;
+}
+
+.text__info h1{
+    font-size: 110px;
+    color: #da8000;
+}
+.text__info h3{
+    font-size: 42px;
+    color: #da8000;
+}
+.text__info p{
+    color: #da8000;
+    max-width: 800px;
+    /*text-align: center;*/
+    margin: auto;
+    font-size: 18px;
+}
+.logos__info{
+    margin-top: 170px;
+}
+.logos__info img{
+    max-height: 120px;
+}
+.top__row{
+    display: flex;
+    justify-content: space-evenly;
+}
+.bot__row{
+    margin-top: 170px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.logo__text{
+    width: 200px;
+}
+.logo__text img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.logo__text p{
+    margin-top: 30px;
+    font-family: 'Carter One', cursive;
+    font-size: 20px;
+    text-align: center;
+}
+.find__us{
+    background-color: #212121;
+    /*padding: 30px 0;*/
+    margin-top: 170px;
+    /*margin-bottom: 100px;*/
+}
+.find__us h1{
+    padding: 30px 0;
+    font-family: 'Carter One', cursive;
+    text-align: center;
+    font-size: 90px;
+}
+.map{
+    padding-left: 10px;
+    padding-right: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+
+@media (max-width: 640px) {
+    nav{
+        margin-left: 10px;
+    }
+    .menu_list a{
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 800px) {
+    #bot_info p{
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 670px) {
+    #bot_info p{
+        font-size: 10px;
+    }
+}
+

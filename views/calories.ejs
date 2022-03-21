@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Calories</title>
+    <%- include('inc/precons')%>
+    <link rel="stylesheet" href="/stylesheets/reset.css">
+    <link rel="stylesheet" href="/stylesheets/main_max.css">
+    <link rel="stylesheet" href="/stylesheets/calories.css">
+</head>
+<body>
+<%- include('inc/header')%>
+<div class="container">
+    <%- include('inc/full_logo')%>
+    <div class="top_main" id="top">
+        <h2>Calorie calculator</h2>
+        <p>The calorie calculator will allow you to calculate the amount of energy that your body needs daily depending on your height,
+            weight, age and degree of physical activity (calorie rate). Also, this version of the calorie calculator as a result of the calculation will give recommendations on the amount of calories needed to lose weight. Also for weight gain.</p>
+    </div>
+    <div class="calculator" id="calc">
+        <div class="rectangle">
+            <form action="/calories" method="post" class="innerRect">
+                <div class="left">
+                    <span>Weight: </span><input name="weight" class="inpStyle">
+                    <br><br>
+                    <span>High: </span><input name="height" class="inpStyle">
+                    <br><br>
+                    <span>Age: </span><input name="age" class="inpStyle">
+                    <div class="radiogroup">
+                        <div class="form_radio">
+                            <input class="radioBut" id="male" type="radio" name="sex" value="Male"><label for="male">Male</label>
+                        </div>
+                        <div class="form_radio">
+                            <input class="radioBut" id="female" type="radio" name="sex" value="Male"><label for="female">Female</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="right">
+                    <select name="activity" class="activChoose">
+                        <option value="--Choose an option--">--Choose an option--</option>
+                        <option value="low">Low</option>
+                        <option value="middle">Middle</option>
+                        <option value="high">High</option>
+                        <option value="sport">Sportsman</option>
+                        <option value="extra sport">Extra sportsman</option>
+                    </select>
+                    <input type="submit" value="Submit" class="submBut">
+                </div>
+            </form>
+        </div>
+        <div class="act">
+            <h3><sup>*</sup>Activity:</h3>
+            <ul>
+                <li>
+                    Low - intense exercise for at least 20 minutes 1 to 3 times a week. For example, cycling, jogging, basketball, swimming, etc.
+                    Or if you often have to walk for long periods of time without exercising.
+                </li>
+                <li>
+                    Middle – doing at least 20 minutes of light exercise 3 to 5 times a week (or moderate work)
+                </li>
+                <li>
+                    High - intense exercise 30 to 60 minutes 3 to 5 times per week
+                </li>
+                <li>
+                    Extra – daily workouts of at least 60 minutes. 5 to 7 days a week
+                </li>
+                <li>
+                    Extra High - doing at least 60 minutes of intense exercise 5 to 7 days a week or 2 times a day. It also includes professions, related to physical work - construction work, landscape work.
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="dailyAmount">
+        <h3>Daily amount of calories</h3>
+        <div class="amountTypes">
+            <div class="amountResult">
+                <h4>To lose weight</h4>
+                <h5><%=Math.ceil(caloriesLose)%> kcal</h5>
+            </div>
+            <div class="amountResult">
+                <h4>
+                    To keep weight
+                </h4>
+                <h5><%=Math.ceil(calories)%> kcal</h5>
+            </div>
+            <div class="amountResult">
+                <h4>To gain weight</h4>
+                <h5><%=Math.ceil(caloriesGain)%> kcal</h5>
+            </div>
+        </div>
+    </div>
+    <div class="howToUse">
+        <h2 class="htuMarg">How to use <a href="#top">Calorie Calculator</a></h2>
+        <p>
+            Although our Calorie Calculator is very accurate, keep in mind that the error in the results can be quite high. This is due to the fact that it is impossible to determine with 100% accuracy the rate of calorie burning by your body.
+            <br><br>To minimize errors, we suggest using the online calorie counter in this way:
+        </p>
+        <ul>
+            <li>Start losing weight or gaining weight with the daily calorie content that the calculator suggested.</li>
+            <li>If weight loss does not decrease after one to two weeks, then reduce the daily calorie content by 100-200 calories. Continue lowering until your body weight begins to drop.</li>
+            <li>If, when gaining muscle mass, the weight does not increase after one to two weeks, then increase the daily calorie intake by 200 calories.
+                If after a week there are still no results, add another 200 calories to the daily allowance.
+                 Continue increasing your caloric intake until your body weight begins to grow at the pace that is right for you.</li>
+        </ul>
+        <h2 class="htuMarg">We recommend:</h2>
+        <ul>
+            <li>to lose weight not more than 3-4 kg per month</li>
+            <li>to gain weight not more than 3.5-4.5 kg per month</li>
+        </ul>
+        <p class="botInf">
+            Counting calories is the way to a beautiful figure and a healthy body. This is what will allow you to maintain the desired shape for a long time without constant restrictions in your favorite treats.
+            <br><br>
+            We also recommend you to look at the <a href="fruits">calorie table</a> of products.
+        </p>
+    </div>
+</div>
+<%- include('inc/footer')%>
+</body>
+</html>

@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Calorie table</title>
+    <%- include('inc/precons')%>
+    <link rel="stylesheet" href="/stylesheets/reset.css">
+    <link rel="stylesheet" href="/stylesheets/main_max.css">
+    <link rel="stylesheet" href="/stylesheets/table.css">
+    <title>Document</title>
+</head>
+<body>
+<%- include('inc/header')%>
+<div class="container">
+    <%- include('inc/full_logo')%>
+    <div class="top_main">
+        <h2>Calorie table</h2>
+        <p>
+            For food, the energy value is usually indicated on the basis of <span>100 grams</span> of product, or per <span>100 ml</span> of drinks,
+            includes information about the amount of three main components - proteins, fats, carbohydrates and total energy value.
+            The content of proteins, fats, carbohydrates is presented in grams, and the calorie content is in kcal.
+        </p>
+    </div>
+    <div class="find">
+        <form action="/fruits" method="post">
+            <span>Type any product: </span><input name='name' id="searchPole">
+            <input id="searchSubm" value="submit" type = submit>
+        </form>
+    </div>
+    <table>
+        <tr class="tblTop">
+            <td>Name</td>
+            <td>Proteins</td>
+            <td>Fats</td>
+            <td>Carbs</td>
+            <td>Calories</td>
+        </tr>
+        <%dane.forEach(function(row){%>
+        <tr>
+            <td><%=row.name%></td>
+            <td><%=row.proteins%>g</td>
+            <td><%=row.fats%>g</td>
+            <td><%=row.carbs%>g</td>
+            <td><%=row.calories%>kcal</td>
+        </tr>
+        <%})%>
+    </table>
+    <div class="bzuInfo">
+        <h2>Proteins</h2>
+        <p>
+            Proteins are important for the growth of new tissues as well as for the repair of damaged ones, which is exactly what happens when you exercise. Protein should be your best friend if you want to gain or maintain muscle mass. But proteins are not only muscles, they are also a feeling of satiety that will help you stick to your diet.
+        </p>
+        <h3><span>Protein sources:</span> eggs, milk, cheese, yogurt, cottage cheese, meat, fish, nuts, beans, peas, lentils, soybeans and other legumes.</h3>
+
+        <h2>Fats</h2>
+        <p>
+            Fats can be very helpful in achieving your body shaping goal, they also affect hormones - too little fat can be detrimental to the body.
+            25% of all calories in a flexible diet come from fat.
+            This can be adjusted later, but this is what the initial proportion looks like.
+        </p>
+        <h3><span>Fat Sources:</span> Olive oil, coconut oil, natural peanut butter and other nut butters, avocado, almonds, walnuts, cashews, red fish, mackerel, egg yolks.</h3>
+
+        <h2>Carbohydrates</h2>
+        <p>
+            Your body uses carbohydrates to make glucose, which is our body's preferred fuel or energy source.
+            They are what make it possible for us to stay active.
+            Fiber, which is important to keep an eye on if you want to stay healthy,
+            is also a source of carbohydrates, but it does not contain calories.
+        </p>
+        <h3><span>Sources of carbohydrates:</span> cereals and cereals, bread, cereals, pasta, potatoes, fruits, vegetables, flour products.</h3>
+    </div>
+</div>
+<%- include('inc/footer')%>
+</body>
+</html>

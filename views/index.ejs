@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <title>Real One</title>
+  <%- include('inc/precons')%>
+  <link rel="stylesheet" href="/stylesheets/reset.css">
+  <link rel="stylesheet" href="/stylesheets/main_max.css">
+  <!--<link rel="stylesheet" href="css/main_max.css" media="screen and (min-width:1000px)">
+  <link rel="stylesheet" href="css/main_min.css" media="screen and (max-width:999px)">-->
+</head>
+<body>
+<%- include('inc/header')%>
+<div class="main">
+  <div id="slider" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-target="#slider" data-slide-to="0" class="active"></li>
+      <li data-target="#slider" data-slide-to="1"></li>
+      <li data-target="#slider" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner">
+      <div class="carousel-item active" data-bs-touch="true">
+        <img class="d-block w-100" src="/images/main_slider.png" alt="First slide">
+        <!--                <div class="carousel-caption d-none d-md-block">-->
+        <!--                    <h5>...</h5>-->
+        <!--                    <p>...</p>-->
+        <!--                </div>-->
+      </div>
+      <div class="carousel-item" data-bs-touch="true">
+        <img class="d-block w-100" src="/images/fighting.jpg" alt="Second slide">
+        <!--                <div class="carousel-caption d-none d-md-block">-->
+        <!--                    <h5>...</h5>-->
+        <!--                    <p>...</p>-->
+        <!--                </div>-->
+      </div>
+      <div class="carousel-item" data-bs-touch="true">
+        <img class="d-block w-100" src="/images/gym.jpg" alt="Third slide">
+        <!--                <div class="carousel-caption d-none d-md-block">-->
+        <!--                    <h5>...</h5>-->
+        <!--                    <p>...</p>-->
+        <!--                </div>-->
+      </div>
+    </div>
+    <a class="carousel-control-prev" href="#slider" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#slider" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+  <div id="slider_inner" class="full_logo">
+    <h3>Real One Warsaw</h3>
+    <h5>Simple, beautiful and effective</h5>
+  </div>
+</div>
+<div class="why__block container">
+  <div class="text__info">
+    <h1>Why our gym?</h1>
+    <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu enim a quam porta posuere. Fusce vitae
+      cursus mauris.
+      Etiam ac auctor nunc. Cras ipsum justo, aliquet pharetra ipsum ac, consectetur pharetra lacus.</p>
+  </div>
+  <div class="logos__info">
+    <div class="top__row">
+      <div class="logo__text">
+        <img src="/images/ganteli.png">
+        <p>Biggest crossfit area in Poland</p>
+      </div>
+      <div class="logo__text">
+        <img src="/images/cardio.png">
+        <p>Huge cardio zone</p>
+      </div>
+      <div class="logo__text">
+        <img src="/images/wifi.png">
+        <p>Free WiFi</p>
+      </div>
+    </div>
+    <div class="bot__row">
+      <div class="logo__text">
+        <img src="/images/diet.png">
+        <p>Meal plan for every member</p>
+      </div>
+      <div class="logo__text">
+        <img src="/images/parklogo.png">
+        <p>Free parking</p>
+      </div>
+      <div class="logo__text">
+        <img src="/images/sauna.png">
+        <p>Sauna and jacuzzi</p>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="find__us">
+  <!--    <div class="container">-->
+  <!--        <h1>Our location</h1>-->
+  <div class="map">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2563.037273954922!2d19.90598501497558!3d50.02939737964434!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47165c86018c6659%3A0x80a5d4885f54d809!2sCentrum%20Dydaktyki%20Wydzia%C5%82u%20FAIS!5e0!3m2!1sru!2spl!4v1638844324713!5m2!1sru!2spl"
+            width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+  </div>
+  <!--    </div>-->
+</div>
+<%- include('inc/footer')%>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+<script>
+  $('#slider').carousel({
+    interval: 10000,
+    keyboard: false,
+    pause: 'hover',
+    ride: 'carousel',
+    wrap: true,
+    // touch: true
+  });
+</script>
+</body>
+</html>

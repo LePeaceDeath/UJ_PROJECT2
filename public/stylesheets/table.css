@@ -1,0 +1,82 @@
+.full_logo{
+    margin: 50px auto;
+}
+
+.top_main{
+    margin: auto;
+    max-width: 1000px;
+    /*border: 1px solid red;*/
+    text-align: center;
+    font-family: "Carter One", cursive;
+    color: #da8000;
+}
+
+.top_main h2{
+    font-size: 75px;
+}
+.top_main p{
+    font-size: 20px;
+    line-height: 30px;
+}
+.top_main span{
+    color: white;
+    /*color: #ff9600;*/
+    font-style: italic;
+}
+
+.find{
+    margin-top:80px;
+    color: #da8000;
+    font-family: "Carter One", cursive;
+}
+.find span{
+    font-size: 22px;
+}
+table {
+    margin: 30px auto;
+    border-spacing: 30px 10px;
+    border-collapse: separate;
+    width: 400px;
+    /*border: 1px solid red;*/
+}
+td {
+    /*border: 1px solid red;*/
+    text-align: center;
+    color: #da8000;
+    font-family: "Carter One", cursive;
+}
+.tblTop{
+    font-size: 30px;
+}
+
+.bzuInfo{
+    font-family: "Carter One", cursive;
+    margin-top: 135px;
+    margin-bottom: 200px;
+}
+.bzuInfo h2{
+    color: #da8000;
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+.bzuInfo span{
+    color: white;
+}
+.bzuInfo h3{
+    margin-top: 20px;
+    margin-bottom: 35px;
+}
+#searchPole{
+    margin-top: -6px;
+    border: 3px solid #000000;
+    border-radius: 5px;
+    background-color: darkgray;
+}
+#searchSubm{
+    border: 3px solid #000000;
+    border-radius: 5px;
+    margin-top: -5px;
+    height: 32px;
+    background-color: darkgray;
+}
+
